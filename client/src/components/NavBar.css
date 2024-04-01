@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px;
+    height: 8vh;
+}
+.header ul{
+   list-style: none;
+   display: flex;
+}
+.header ul li {
+    padding: 10px;
+}
+.header ul li a{
+    text-decoration: none;
+    color: var(--black);
+    font-family: "Outfit", sans-serif;
+}
+.n-leftSide img{
+    width: 55px;
+}
+.contactButton{
+background-color: rgb(222, 222, 222);
+border: none;
+border-radius: 16px;
+padding: 6px 10px;
+}
+.contactButton:hover{
+background-color: rgb(192, 192, 192);
+}
