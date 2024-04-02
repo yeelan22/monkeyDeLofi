@@ -18,8 +18,11 @@ console.log(__dirname);
 
 //middlewares
 app.use(express.json());
-app.use(cors());
-
+// app.use(cors());
+app.use(cors({
+  origin: "https://monkey-de-lofi.vercel.app", // Allow requests from this origin
+  credentials: true // Allow including cookies in cross-origin requests
+}));
 //routes
 // Error handling middleware
 

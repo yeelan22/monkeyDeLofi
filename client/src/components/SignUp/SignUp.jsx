@@ -22,7 +22,7 @@ const SignUp = () => {
         e.preventDefault();
 
         try{
-            const url = "http://localhost:3000/api/users";
+            const url = "https://monkey-murex.vercel.app/api/users";
             const {data: res} = await axios.post(url, data);
             console.log(res.message);
             navigate("/login");

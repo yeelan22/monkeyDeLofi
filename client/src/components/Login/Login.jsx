@@ -259,7 +259,7 @@ const Login = () => {
         e.preventDefault();
 
         try{
-            const url = "http://localhost:3000/api/auth"; // Updated endpoint
+            const url = "https://monkey-murex.vercel.app/api/auth"; // Updated endpoint
             const response = await axios.post(url, data);
             console.log(response);
             setSuccessMessage("Logged in successfully"); // Set success message
